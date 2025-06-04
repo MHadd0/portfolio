@@ -19,7 +19,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/Images/indeed2-removebg.png);
+    background-image: url(/images/indeed2-removebg.png);
     background-repeat: no-repeat;
     background-size: 800px 1000px;
     background-position: right 90px;
