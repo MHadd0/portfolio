@@ -1,3 +1,3 @@
-# portfolio
+Check out my portfolio [here](https://mhadd0.github.io/portfolio/)!
 
-https://mhadd0.github.io/portfolio/
+
