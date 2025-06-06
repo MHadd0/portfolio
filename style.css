@@ -403,6 +403,7 @@ nav .fas {
     nav .fas {
         display: block;
         font-size: 25px;
+        margin-right: 75px;
     }
 
     nav ul {
@@ -410,7 +411,7 @@ nav .fas {
         position: fixed;
         top: 0;
         right: -200px; 
-        width: 100px;
+        width: 180px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
