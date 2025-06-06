@@ -14,14 +14,15 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#blog">Blog</a></li>
-                
+            <i class="fas fa-times" onclick="closemenu()"></i>  
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Data Analyst</p>
@@ -151,7 +152,7 @@
 
         <div class="blog-post-item">
             <div class="blog-content">
-                <a href="https://medium.com/@matthewhaddad1234/decade-of-clarity-a-ten-year-review-of-calgarys-water-quality-30e04eec8315">Decade of Clarity: A Ten-Year Review of Calgary’s Water Quality</a>
+                <a href="">Decade of Clarity: A Ten-Year Review of Calgary’s Water Quality</a>
                 <h6>23 Jul 2024</h6>
 
             <div class="blog-image">
@@ -162,5 +163,17 @@
         </div>
 </div>
 
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+    sidemeu.style.right = "-200px";
+}
+
+</script>
 </body>
 </html>
