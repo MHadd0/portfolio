@@ -128,7 +128,6 @@ nav ul li a:hover::after{
 
 #Projects{
     padding: 50px 0;
-    place-self: center;
 }
 
 #Projects .sub-title{
@@ -287,7 +286,7 @@ form input, form textarea {
     font-size: 18px;
     border-radius: 6px
 }
-form btn2 {
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -371,4 +370,117 @@ form btn2 {
   margin-top: 5px;
   font-size: 14px;
   color: #888;
+}
+
+/*------------------css for small screen-----------------*/
+nav .fas {
+    display: none;
+}
+
+ @media only screen and (max-width: 600px) {
+    
+    #header {
+        background-image: url(images/indeed2-removebg-phone.png);
+        background-size: contain;
+        background-position: center bottom;
+    }
+
+    .header-text {
+        margin-top: 140%; 
+        font-size: 0px;
+    }
+    .header-text h1 {
+        font-size: 34px;
+        text-align: left;
+        flex-basis: 100%;
+    }
+    .sub-title {
+            /* Reduced title font size */
+        font-size: 40px;
+    }
+    
+    /* Navigation Menu */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #2b65e2;
+        position: fixed;
+        top: 0;
+        right: -200px; 
+        width: 100px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+}
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /* About Section - Stack Columns */
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-top: 50%;
+    }
+    .about-col-1 {
+        margin-bottom: -180px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    
+    /* Projects Section - Single Column Grid */
+    #Projects .sub-title {
+        text-align: left; /* Adjust alignment for mobile */
+        margin-top: -30%;
+    }
+    .work-list {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+        margin-top: -3%;
+    }
+
+    /* Contact Section - Stack Columns */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    #contact .sub-title {
+        text-align: center; /* Adjust alignment for mobile */
+        margin-top: -30%;
+    }
+    .contact-left {
+        margin-bottom: 30px;
+    }
+   
+    /* Blog Section - Stack Image and Content */
+    #blog {
+        padding: 50px 0; /* Adjust padding for mobile */
+    }
+    .blog-post-item {
+        grid-template-columns: 1fr; /* Stack vertically */
+        gap: 15px;
+    }
+    .blog-image {
+        /* Place the image before the text in the visual order */
+        order: -1;
+    }
+    .blog-content a {
+        font-size: 22px; /* Adjust font size for mobile */
+    }
 }
