@@ -484,3 +484,9 @@ form .btn2 {
         font-size: 22px; /* Adjust font size for mobile */
     }
 }
+
+#msg {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    display: block;
+}
