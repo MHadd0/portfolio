@@ -750,6 +750,13 @@ nav .fas {
         display: none;
     }
 
+        .skills-carousel {
+        justify-items: center; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
    .skill-card {
         width: 120px; 
         height: 120px;
