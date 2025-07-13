@@ -7,6 +7,9 @@
     <title>Matthew Haddad Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+    
 </head>
 
 <body>
@@ -27,7 +30,7 @@
         <div class="header-text">
             <p>Data Analyst</p>
             <h1>
-            Hi I'm <span>Matthew</span> <br>Haddad 
+             Hi I'm <span>Matthew</span> <br>Haddad 
             </h1>
         </div>
     </div>
@@ -47,70 +50,117 @@
                    This experience has instilled in him a deep appreciation for precision and perseverance. 
                    An individual with a strong inquisitiveness, he thrives on challenges and enjoys delving into research projects. 
                    He cultivates a collaborative spirit by actively building strong connections with colleagues and collaborators, fostering a positive and productive work environment.</p>
-
-                  <!-- <div class="tab-titles">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
-                   </div> -->
             </div>
         </div>
     </div>
 </div>
-<!-------------------Projects------------------->
+<!-------------------Skills and Education------------------->
+<div class="SKwrapper">
+    <div class="tab-titles">
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    </div> 
+    <div class="tab-content-wrapper">
+            <div class="tab-contents" id="education">
+                <div class="university-container">
+                    <div class="university-card">
+                        <img src="images/uofc.jpg" alt="University of Calgary Logo"> 
+                        <!---<p class="university-name">University of Calgary</p>--->
+                        <p class="course-name">Masters of Data Science and Analytics</p>
+                        <p class="program-dates">January, 2024-Ongoing</p>
+                    </div>
+                    <div class="university-card">
+                        <img src="images/mru.jpg" alt="Mount Royal University Logo">
+                        <!---<p class="university-name">Mount Royal University</p>--->
+                        <p class="course-name">Bachelor of Science Chemistry</p>
+                        <p class="program-dates">September, 2019-May, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <div class="skills-carousel-container">
+                    <div class="skills-carousel">
+                        <div class="skill-card">
+                            <img src="images/Python-removebg-preview.png" >
+                            <p class="skill-description"> <span class="skill-title">Python</span> <br> 
+                                <span class="hidden-after-br">
+                                Working with visualization libraries such as Matplotlib, Plotly, and Seaborn, creating insightful and engaging data visualizations. Leveraged numpy and pandas for data manipulation and analysis, as well as Scikit-learn for implementing machine learning models.</p> 
+                                </span>
+                        </div>
 
+                        <div class="skill-card">
+                            <img src="images/Power_BI-removebg-preview.png" >
+                            <p class="skill-description"><span class="skill-title">Power BI</span> <br>
+                                <span class="hidden-after-br">
+                                Adept at using Power BI for data analysis and reporting. Able to integrate various data sources, create comprehensive reports, and develop interactive visualizations that help drive informed decision-making.</p>
+                                </span>
+                        </div>
+
+                        <div class="skill-card">
+                            <img src="images/SQL-removebg-preview.png" >
+                            <p class="skill-description"><span class="skill-title">SQL</span> <br>
+                                <span class="hidden-after-br">
+                                Utilizing SQLs powerful capabilities for data querying, manipulation, and analysis. Experience includes writing complex queries, performing data aggregation, and optimizing database performance to effectively manage and analyze large datasets.</p>
+                                </span>
+                        </div>
+
+                        <div class="skill-card">
+                            <img src="images/Tableau-removebg-preview.png" >
+                            <p class="skill-description"><span class="skill-title">Tableau</span> <br>
+                                <span class="hidden-after-br">
+                                Proactive in creating interactive dashboards and visualizations that provide clear and actionable insights, making complex data accessible and understandable.</p>
+                                </span>
+                        </div>
+
+                        <div class="skill-card">
+                            <img src="images/MS-removebg-preview.png" >
+                            <p class="skill-description"><span class="skill-title">Microsoft Office</span> <br>
+                                <span class="hidden-after-br">
+                                Excel for data analysis and PowerPoint for creating compelling presentations.</p>
+                                </span>
+                        </div>
+
+                        <div class="skill-card">
+                            <img src="images/R-removebg-preview.png" >
+                            <p class="skill-description"><span class="skill-title">R</span> <br>
+                                <span class="hidden-after-br">
+                                Leveraging powerful packages such as ggplot2 for data visualization and dplyr for data manipulation. Implementing logistic regression, multiple linear regression, linear discriminant models, and decision trees to effectively analyze complex datasets and develop robust statistical models.</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>       
+
+<!-------------------Projects------------------->
 <div id="Projects">
-    <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/cancer.jpg" alt="poop">
-                <div class="work-layer">
-                    <h3>Investigation into Breast Cancer Genes</h3>
-                    <p>This study analyzed BRCA2 gene variants using logistic regression, LDA, QDA, and regression tree models to classify their impacts as benign or damaging. Data from gnomAD and ClinVar provided insights into genetic, population, and in silico predictors, with logistic regression emerging as the most accurate model. While limitations remain, this research offers valuable understanding of the factors influencing BRCA2 variant pathogenicity and lays the groundwork for future genetic studies.</p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/Breast%20Cancer%20Gene%20ML%20Modeling.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+    <div id="container">
+    <h1 class="sub-title">Projects</h1>
+        <div id="toggleContainer">
+            <label>Carousel</label>
+            <div id="toggle">
+            <div id="outer3">
+                <div id="slider3"></div>
             </div>
-            <div class="work">
-                <img src="images/energytrends_image.jpg">
-                <div class="work-layer">
-                    <h3>Energy Trends: Financing, Production & Renewables</h3>
-                    <p>This analysis examines global trends in renewable energy using data on capacity, production, investment, and utilization. It reveals growth in renewable energy capacity worldwide, with countries like China leading in total capacity and Iceland in per capita capacity. The analysis also finds a moderate correlation between investment and capacity growth, suggesting that increased investment is driving renewable energy development.</p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/Energy%20Trends_Financing_Production_Renewables.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Organohalide_image.png">
-                <div class="work-layer">
-                    <h3>Organohalide Nucleophilic Substitution Transition State Analysis with Hydroxide Anion</h3>
-                    <p>This study used GAMESS software to find the high-energy intermediate state (transition state) in SN2 reactions of haloethanes and hydroxide. MP2 theory with a small basis set efficiently located the transition state, while a different method (DFT) was less effective. For heavier halogens like iodine, the method faced challenges, suggesting basis set size is crucial for accurate transition state calculations.</p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/Organohalide_Nucleophilic_Substitution_Transition_State_Analysis.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/veggie.jpg">
-                <div class="work-layer">
-                    <h3>Unveiling Hidden Patterns: A PCA and Clustering Analysis of Supermarket Data</h3>
-                    <p>This project focused on using data analysis techniques to understand decluttering patterns and preferences among clients. Through this research, I was able to develop personalized decluttering strategies based on data insights. </p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/Supermarket%20PCA%20and%20Clustering%20Analysis.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images\walmartsales_image.jpg">
-                <div class="work-layer">
-                    <h3>Predicting Walmart Sales Using Linear Regression: A Data-Driven Approach</h3>
-                    <p>This study built a multiple linear regression model to predict Walmart sales using factors like temperature and holidays. They analyzed data on stores, sales, and economic indicators, then checked the model's assumptions and incorporated interaction terms for a more nuanced picture. Despite limitations, the research offers insights into sales-influencing factors at these Walmart locations.</p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/WalmartSales_MultipleLinearRegression.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/YoutubeAPI.jpg">
-                <div class="work-layer">
-                    <h3>Unveiling Public Opinion: A multifaceted Analysis of YouTube Comments</h3>
-                    <p>This project was focused on using data analysis techniques to understand decluttering patterns and preferences among clients. Through this research, I was able to develop personalized decluttering strategies based on data insights. </p>
-                    <a href="https://github.com/MHadd0/Projects/blob/main/Youtube%20API%20Topic%20and%20Sentiment%20Analysis.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
+            <label>Tiles</label>
+        </div>7
+        </div>
+        <div id="projectTitleDisplay"></div> 
+        <div id="galleryView">
+        <div id="galleryContainer">
+            <div id="leftView"></div>
+            <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+            <a id="linkTag" href="#" target="_blank">
+                <div id="mainView"></div>
+            </a>
+            <div id="rightView"></div>
+            <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+        </div>
+        </div>
+        <div id="tilesView">
+        <div id="tilesContainer"></div>
         </div>
         <a href="https://github.com/MHadd0/Projects" class="btn">See All Projetcs   <i class="fa-solid fa-up-right-from-square"></i></a>
     </div>
@@ -145,25 +195,8 @@
 </div>
 
 
-<!-------------------Blog------------------->
 
-<div id="blog">
-    <div class="container">
-        <h1 class="sub-title">Blog</h1>
-
-        <div class="blog-post-item">
-            <div class="blog-content">
-                <a href="">Decade of Clarity: A Ten-Year Review of Calgary’s Water Quality</a>
-                <h6>23 Jul 2024</h6>
-
-            <div class="blog-image">
-                <img src="images/calgary.png" alt="Calgary Water Review">
-            </div>
-            </div>
-        </div>
-        </div>
-</div>
-
+<!-------------------phone menu------------------->
 <script>
 
     var sidemeu = document.getElementById("sidemenu");
@@ -177,6 +210,7 @@
 
 </script>
 
+<!-------------------Contact Google Sheet Form------------------->
 <script>
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbylp2YUPiws_pxW9A9RpMORG6XpxZn_k2_V4LEFG0MGW0Vf_JZvBcgZe0UvFf4YsLL7/exec'
@@ -193,5 +227,175 @@
   })
 </script>
 
+<!-------------------Skills and Education------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+                }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+                }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<!-------------------Projects carousel------------------>
+
+<script>
+    document.getElementById("outer3").addEventListener("click", toggleState3);
+    
+function toggleState3() {
+  let galleryView = document.getElementById("galleryView")
+  let tilesView = document.getElementById("tilesView")
+  let outer = document.getElementById("outer3");
+  let slider = document.getElementById("slider3");
+  let tilesContainer = document.getElementById("tilesContainer");
+  let projectTitleDisplay = document.getElementById("projectTitleDisplay");
+  if (slider.classList.contains("active")) {
+    slider.classList.remove("active");
+    outer.classList.remove("outerActive");
+    galleryView.style.display = "flex";
+    tilesView.style.display = "none";
+    projectTitleDisplay.style.display = "block";
+    
+    while (tilesContainer.hasChildNodes()) {
+      tilesContainer.removeChild(tilesContainer.firstChild)
+      }  
+  } else {
+    slider.classList.add("active");
+    outer.classList.add("outerActive");
+    galleryView.style.display = "none";
+    tilesView.style.display = "flex";
+    projectTitleDisplay.style.display = "none";
+     
+    for (let i = 0; i < imgObject.length; i++) {
+      let tileItem = document.createElement("div");
+      tileItem.classList.add("tileItem");
+      tileItem.style.background =  "url(" + imgObject[i] + ")";
+      tileItem.style.backgroundSize = "contain";  
+      tilesContainer.appendChild(tileItem);      
+    }
+  };
+}
+
+let projectTitles = [
+    "Breast Cancer Gene ML Modeling",
+    "Decade of Clarity: A Ten-Year Review of Calgary's Water Quality", // This is the one you circled
+    "Energy Trends: Financing, Production & Renewables",
+    "Organohalide Nucleophilic Substitution Transition State Analysis",
+    "Supermarket PCA and Clustering Analysis",
+    "Walmart Sales: Multiple Linear Regression",
+    "YouTube API Topic and Sentiment Analysis"
+];
+
+let projectLinks = [
+  "https://github.com/MHadd0/Projects/blob/main/Breast%20Cancer%20Gene%20ML%20Modeling.pdf",
+  "https://medium.com/@matthewhaddad1234/decade-of-clarity-a-ten-year-review-of-calgarys-water-quality-30e04eec8315",
+  "https://github.com/MHadd0/Projects/blob/main/Energy%20Trends_Financing_Production_Renewables.pdf",
+  "https://github.com/MHadd0/Projects/blob/main/Organohalide_Nucleophilic_Substitution_Transition_State_Analysis.pdf",
+  "https://github.com/MHadd0/Projects/blob/main/Supermarket%20PCA%20and%20Clustering%20Analysis.pdf",
+  "https://github.com/MHadd0/Projects/blob/main/WalmartSales_MultipleLinearRegression.pdf",
+  "https://github.com/MHadd0/Projects/blob/main/Youtube%20API%20Topic%20and%20Sentiment%20Analysis.pdf",
+  
+];
+
+let imgObject = [
+  "images/cancer.jpg",
+  "images/calgary.png",
+  "images/energytrends_image.jpg",
+  "images/Organohalide_image.png",
+  "images/veggie.jpg",
+  "images/walmartsales_image.jpg",
+  "images/youtube_img-removebg-preview.png",
+  
+];
+
+
+let mainImg = 0;
+let prevImg = imgObject.length - 1;
+let nextImg = 1;
+
+function loadGallery() {
+
+  let mainView = document.getElementById("mainView");
+  mainView.style.background = "url(" + imgObject[mainImg] + ")";
+
+  let leftView = document.getElementById("leftView");
+  leftView.style.background = "url(" + imgObject[prevImg] + ")";
+  
+  let rightView = document.getElementById("rightView");
+  rightView.style.background = "url(" + imgObject[nextImg] + ")";
+  
+  let linkTag = document.getElementById("linkTag")
+  linkTag.href = imgObject[mainImg];
+
+  document.getElementById("linkTag").href = projectLinks[mainImg];
+
+  let projectTitleDisplay = document.getElementById("projectTitleDisplay");
+  projectTitleDisplay.textContent = projectTitles[mainImg];
+
+};
+
+function scrollRight() {
+  
+  prevImg = mainImg;
+  mainImg = nextImg;
+  if (nextImg >= (imgObject.length -1)) {
+    nextImg = 0;
+  } else {
+    nextImg++;
+  }; 
+  loadGallery();
+};
+
+function scrollLeft() {
+  nextImg = mainImg
+  mainImg = prevImg;
+   
+  if (prevImg === 0) {
+    prevImg = imgObject.length - 1;
+  } else {
+    prevImg--;
+  };
+  loadGallery();
+};
+
+document.getElementById("navRight").addEventListener("click", scrollRight);
+document.getElementById("navLeft").addEventListener("click", scrollLeft);
+document.getElementById("rightView").addEventListener("click", scrollRight);
+document.getElementById("leftView").addEventListener("click", scrollLeft);
+document.addEventListener('keyup',function(e){
+    if (e.keyCode === 37) {
+    scrollLeft();
+  } else if(e.keyCode === 39) {
+    scrollRight();
+  }
+});
+
+window.addEventListener('load', function() {
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        let slider = document.getElementById("slider3");
+        if (!slider.classList.contains("active")) {
+            toggleState3(); 
+        }
+       
+        document.getElementById("toggleContainer").style.display = "none";
+    }
+});
+
+loadGallery();
+
+
+</script>
+
 </body>
 </html>
+
+
