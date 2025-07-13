@@ -276,6 +276,11 @@ function toggleState3() {
     projectTitleDisplay.style.display = "none";
      
     for (let i = 0; i < imgObject.length; i++) {
+      let linkElement = document.createElement("a");
+      linkElement.href = projectLinks[i];
+      linkElement.target = "_blank";
+      linkElement.setAttribute("ontouchstart", "");
+
       let tileItem = document.createElement("div");
       tileItem.classList.add("tileItem");
       tileItem.style.background =  "url(" + imgObject[i] + ")";
