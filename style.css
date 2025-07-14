@@ -343,25 +343,40 @@ nav ul li a:hover::after{
   flex-wrap: wrap;
   box-sizing: border-box;
   align-content: center;
-  
+  gap: 30px;
   
 }
 
-.tileItem {
+.tileLink {
+  display: block;
   width: 250px;
   height: 250px;
-  margin: 5px;
   border-radius: 5px;
+  text-decoration: none;
+}
+
+.tileItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   transition: all 0.5s ease;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
+  cursor: pointer;
+}
+
+#tilesContainer {
+  display: grid; /* or flex if you're using flex */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 
 .tileItem:hover {
     transform: scale(1.05);
     transition: all 0.5s ease;
 }
+
 
 #galleryContainer { 
   height: 500px;
@@ -391,6 +406,14 @@ nav ul li a:hover::after{
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.tileItem {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 #galleryView {
@@ -643,6 +666,24 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .tileItem {
+    cursor: pointer;
+    touch-action: manipulation; /* improves touch responsiveness */
+    }
+
+    #tilesView a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    pointer-events: auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 10; 
+    }
     
     #header {
         background-image: url(images/indeed2-removebg-phone.png);
@@ -750,7 +791,7 @@ nav .fas {
         display: none;
     }
 
-        .skills-carousel {
+    .skills-carousel {
         justify-items: center; 
         display: flex;
         flex-wrap: wrap;
@@ -821,6 +862,7 @@ nav .fas {
         gap: 30px;
         width: 100%;
         min-height: auto; 
+        margin-left: 40px;
     }
 
 
