@@ -276,17 +276,21 @@ function toggleState3() {
     projectTitleDisplay.style.display = "none";
      
     for (let i = 0; i < imgObject.length; i++) {
-      let linkElement = document.createElement("a");
-      linkElement.href = projectLinks[i];
-      linkElement.target = "_blank";
-      linkElement.setAttribute("ontouchstart", "");
+        let linkElement = document.createElement("a");
+        linkElement.href = projectLinks[i];
+        linkElement.target = "_blank";
+        linkElement.setAttribute("ontouchstart", "");
+        linkElement.classList.add("tileLink");
 
-      let tileItem = document.createElement("div");
-      tileItem.classList.add("tileItem");
-      tileItem.style.background =  "url(" + imgObject[i] + ")";
-      tileItem.style.backgroundSize = "contain";  
-      tilesContainer.appendChild(tileItem);      
-    }
+        let tileItem = document.createElement("div");
+        tileItem.classList.add("tileItem");
+        tileItem.style.background = `url(${imgObject[i]})`;
+        tileItem.style.backgroundSize = "cover";
+        tileItem.style.backgroundPosition = "center";
+
+        linkElement.appendChild(tileItem);
+        tilesContainer.appendChild(linkElement);
+        }
   };
 }
 
